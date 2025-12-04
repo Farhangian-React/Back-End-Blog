@@ -23,7 +23,7 @@ class PostController extends Controller {
     const user = req.user;
     let { search, categorySlug, sort, page, limit } = req.query;
     page = Number(page) || 1;
-    limit = Number(limit) || 6;
+    limit = Number(limit) || 12;
     const skip = (page - 1) * limit;
 
     if (search) {
